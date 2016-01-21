@@ -14,7 +14,7 @@ class BrcmFirmwareDump:
 		
 		# Connect 
 		self.tn = Telnet(ip,port,TIMEOUT)
-		self.tn.set_debuglevel(1)
+		# self.tn.set_debuglevel(1)
 		# workarround to avoid the connection getting stuck at option negociation
 		self.tn.set_option_negotiation_callback(self.option_negociation)
 		
